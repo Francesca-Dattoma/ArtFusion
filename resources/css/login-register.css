@@ -1,5 +1,7 @@
 
-
+/* rosso #B3365B
+beige EBCACA
+blu scurissimo 031C32 */
 
 
 
@@ -34,8 +36,8 @@
 .bottone {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
-	color: #FFFFFF;
+	background-color: #EBCACA;
+	color: #031C32;
 	font-size: 12px;
 	font-weight: bold;
 	padding: 12px 45px;
@@ -146,10 +148,14 @@
 	transform: translateX(-100%);
 }
 
+body{
+	background-color: #031C32;
+}
+
 .overlay {
 	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: -webkit-linear-gradient(to left, #EBCACA, #B3365B);
+	background: linear-gradient(to right, #EBCACA, #c08d8d, #b3365c96, #B3365B );
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
