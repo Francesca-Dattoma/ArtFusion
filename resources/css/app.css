@@ -1,3 +1,4 @@
 @import 'bootstrap';
 @import './style.css';
-@import './login-register.css'
+@import './login-register.css';
+@import '@fortawesome/fontawesome-free/css/all';

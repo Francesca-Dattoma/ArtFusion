@@ -1,32 +1,33 @@
 <x-layout>
 <div class="contenitore" id="contenitore">
 	<div class="form-contenitore sign-up-contenitore">
-		<form class="compila" action="#">
-			<h1 class="testo1">Create Account</h1>
-			<div class="social-contenitore">
-				<a href="#" class="social encore"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social encore"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social encore"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span class="spann">or use your email for registration</span>
-			<input class="insert" type="text" placeholder="Name" />
-			<input class="insert" type="email" placeholder="Email" />
-			<input class="insert" type="password" placeholder="Password" />
-			<button class="bottone">Sign Up</button>
+		<form class="compila" action="{{route('register')}}" method="POST">
+			@csrf
+			<h1 class="testo1">Registrati</h1>
+		
+			<label for="name">Nome</label>
+			<input class="insert" type="text" placeholder="Name" name="name" id="name" />
+
+			<label for="email">Email</label>
+			<input class="insert" type="email" name="email" placeholder="Email" id="email" />
+
+			<label for="password">Password</label>
+			<input class="insert" type="password" name="password" placeholder="minimo 8 caratteri"id="password" />
+
+			<label for="password">Conferma Password</label>
+			<input class="insert" name="password_confirmation" type="password" id="password_confirmation" >
+
+			<button class="bottone">Sign up</button>
 		</form>
 	</div>
 	<div class="form-contenitore sign-in-contenitore">
-		<form class="compila" action="#">
-			<h1 class="testo1">Sign in</h1>
-			<div class="social-contenitore">
-				<a href="#" class="social encore"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social encore"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social encore"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span class="spann">or use your account</span>
+		<form class="compila" action="{{route('login')}}" method="POST">
+			@csrf
+			<h1 class="testo1">Accedi</h1>
 			<input class="insert" type="email" placeholder="Email" />
+
 			<input class="insert" type="password" placeholder="Password" />
-			<a  class="encore" href="#">Forgot your password?</a>
+			{{-- <a  class="encore" href="#">Forgot your password?</a> --}}
 			<button class="bottone">Sign In</button>
 		</form>
 	</div>
@@ -45,16 +46,6 @@
 		</div>
 	</div>
 </div>
-
-{{-- <footer>
-	<p>
-		Created with <i class="fa fa-heart"></i> by
-		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-		- Read how I created this and how you can join the challenge
-		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
-	</p>
-</footer> --}}
-
 
 
 </x-layout>
