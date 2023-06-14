@@ -30,7 +30,10 @@
               <form action="{{route('logout')}}" method="POST" id="form-logout" class="d-none">@csrf</form>
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{{route('user')}}">User</a></li>
+              <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
+              
             </ul>
 
           </li>

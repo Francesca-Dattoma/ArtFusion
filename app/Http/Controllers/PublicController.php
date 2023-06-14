@@ -13,4 +13,7 @@ class PublicController extends Controller
     public function utente (){
         return view('auth.registerLogin');
     }
+    public function user(){
+        return view('user');
+    }
 }
