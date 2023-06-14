@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-transparent border-top border-bottom  sticky-top p-3 mt-4">
+<nav class="navbar navbar-expand-lg bg-transparent sticky-top p-3 mt-4">
 
     <div class="container-fluid ">
 
@@ -9,7 +9,7 @@
       </button>
 
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto  mb-2 mb-lg-0  ">
+        <ul class="navbar-nav me-auto border-top border-bottom mb-2 mb-lg-0 mx-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -19,7 +19,7 @@
 
           @auth
 
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown border-top border-bottom">
 
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{Auth::user()->name}}
@@ -34,6 +34,23 @@
             </ul>
 
           </li>
+          @else
+          <li class="nav-item ">
+
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Registrati
+            </a>
+
+            <ul class="dropdown-menu">
+              {{-- <li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#form-logout').submit();">Esci</a></li>
+              <form action="{{route('logout')}}" method="POST" id="form-logout" class="d-none">@csrf</form> --}}
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+
+          </li>
+
 
           @endauth
         
