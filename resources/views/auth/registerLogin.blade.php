@@ -28,9 +28,12 @@
 			<form class="compila" action="{{route('login')}}" method="POST">
 				@csrf
 				<h1 class="testo1">Accedi</h1>
-				<input class="insert" type="email" placeholder="Email" />
+
+				<label for="email">Email</label>
+				<input class="insert" type="email" placeholder="Email" name="email" id="email"/>
 	
-				<input class="insert" type="password" placeholder="Password" />
+				<label for="password">Conferma Password</label>
+				<input class="insert" type="password" name="password" id="password" placeholder="Password" />
 				{{-- <a  class="encore" href="#">Forgot your password?</a> --}}
 				<button class="bottone">Sign In</button>
 			</form>
