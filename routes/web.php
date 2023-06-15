@@ -21,7 +21,7 @@ Route::get('/login-register',[PublicController::class, 'utente'])->name('utente'
 Route::get('/user', [PublicController::class, 'user'])->name('user');
 
 /*Articles*/
-Route::get('/articles/index', [ArticleController::class, 'index'])->name('article.index');
+Route::get('/article/index', [ArticleController::class, 'index'])->name('article.index');
 
 
 
