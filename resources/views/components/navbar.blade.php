@@ -14,7 +14,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('utente')}}">Utente</a>
+            <a class="nav-link" href="{{route('article.index')}}">Articoli</a>
           </li>
 
           @auth
@@ -25,7 +25,7 @@
               {{Auth::user()->name}}
             </a>
 
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu mx-auto">
               <li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#form-logout').submit();">Esci</a></li>
               <form action="{{route('logout')}}" method="POST" id="form-logout" class="d-none">@csrf</form>
               <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -40,18 +40,9 @@
           @else
           <li class="nav-item ">
 
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Registrati
+            <a class="nav-link" href="{{route('utente')}}">
+              Accedi
             </a>
-
-            <ul class="dropdown-menu">
-              {{-- <li><a class="dropdown-item" href="#" onclick="event.preventDefault();document.querySelector('#form-logout').submit();">Esci</a></li>
-              <form action="{{route('logout')}}" method="POST" id="form-logout" class="d-none">@csrf</form> --}}
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-
           </li>
 
 
