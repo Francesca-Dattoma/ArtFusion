@@ -12,10 +12,10 @@
     
 
     <title>ArtFusion</title> <link rel="stylesheet" href="">
-
+    @livewireStyles
 </head>
 <body>
-
+    
 
 
     {{-- <x-header /> --}}
@@ -35,6 +35,6 @@
 
    
   
-   
+   @livewireScripts
 </body>
 </html>
