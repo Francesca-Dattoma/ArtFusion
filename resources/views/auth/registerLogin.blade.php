@@ -2,7 +2,7 @@
 
 	<x-navbar />
 
-<div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+<div class="container-fluid vh-100  d-flex justify-content-center align-items-center">
 	<div class="contenitore" id="contenitore">
 		<div class="form-contenitore sign-up-contenitore">
 			<form class="compila" action="{{route('register')}}" method="POST">

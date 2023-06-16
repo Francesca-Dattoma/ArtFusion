@@ -11,7 +11,7 @@
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto border-top border-bottom mb-2 mb-lg-0 mx-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{route('article.index')}}">Articoli</a>
@@ -39,12 +39,16 @@
           </li>
           @else
           <li class="nav-item ">
-
             <a class="nav-link" href="{{route('utente')}}">
               Accedi
             </a>
           </li>
 
+           <li class="nav-item ">
+            <a class="nav-link" href="{{route('article.create')}}">
+              Inserisci Articolo
+            </a>
+          </li>
 
           @endauth
         
