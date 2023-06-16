@@ -7,7 +7,7 @@
         <label class="label2" for="category">Categoria</label>
         <select class="input2" type="text" name="nome" id="nome" wire:model="category">
             @foreach($categories as $category)
-            <option value="{{$category->id}}">{{$category->nome}}</option>
+            <option value="{{$category->id}}">{{$category->name}}</option>
             @endforeach
         </select>
 

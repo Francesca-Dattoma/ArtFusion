@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Article;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -35,6 +36,20 @@ class CreateForm extends Component
         
         $this->user_id = Auth::user()->id;
         $this->article = Category::find($this->category)->articles()->create($this->validate());
+        // Create a new Article instance
+        $article = new Article;
+
+        // Fill the Article instance with the input data
+        $article->fill([
+            'nome' => $this->nome,
+            'descrizione' => $this->descrizione,
+            'prezzo' => $this->prezzo,
+            'user_id' => Auth::id(),
+            'category_id' => $this->category,
+        ]);
+
+        // Save the Article instance
+        $article->save();
     }
 
 

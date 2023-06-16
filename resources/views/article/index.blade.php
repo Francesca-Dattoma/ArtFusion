@@ -22,7 +22,7 @@
                     <div class="card-grid-space">
                       <a class="card" href="" style="--bg-img:{{Storage::url($article->foto)}}">
                         <div>
-                          <h1>{{$article->nome}}</h1>
+                          <h1>{{$article->name}}</h1>
                           <p>{{$article->descrizione}}</p>
                         </div>
                       </a>
