@@ -1,50 +1,43 @@
 <x-layout>
-      <x-navbar />
-    <div class="container-fluid vh-min-100">
+    
+
+    <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-8">
-
-                <form class="bg-form shadow p-5 mt-5" method="POST">
+            <div class="col-12 col-md-8 ">
+                {{-- <div class="background">
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                </div> --}}
+                <form class="form1">
                     @csrf
+            
+                    <label class="label2" for="nome">Nome</label>
+                    <input class="input2" type="text" name="nome" placeholder="Email or Phone" id="nome">
+            
+                    <label class="label2" for="prezzo">Prezzo</label>
+                    <input class="input2" type="number" name="prezzo" placeholder="Password" id="prezzo">
+                    
+                    <label class="label2" for="descrizione">Descrizione</label>
+                    <input class="input2" type="te" name="descrizione" placeholder="Password" id="descrizione">
+                    
+                    <label class="label2" for="foto">Immagine</label>
+                    <input class="input2" type="file" name="foto" placeholder="Password" id="foto">
+                    <div class="d-flex justify-content-center">
+                        <a href="" class="button2 poiret">Carica</a>
 
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome Articolo</label>
-                        <input type="text" name="nome" class="form-control" id="nome">
-                  
                     </div>
-
-                     <div class="mb-3">
-                         <label for="prezzo" class="form-label">Prezzo (€)</label>
-                         <input type="number" name="prezzo" class="form-control" id="prezzo">
-                    </div>
-
-                    <div class="mb-3">
-                      <label for="descrizione" class="form-label">Descrizione</label>
-                      <textarea id="descrizione" name="descrizione" class="form-control"  cols="30" rows="7"></textarea>
-                    </div>
-                <div class="mb-5">
-                    <label for="category" class="form-label">Categoria</label>
-                      <select id="category" name="category"  class="form-select">Categoria (€)</label>
-                      <option value="" type="number" class="form-control" id="prezzo"></option>
-                 </div>             
-
-                
-                
-                
-                
                     
                     
-                    
-                    <button type="submit" class="btn btn-primary">Inserisci</button>
                 </form>
-                
-
-
-
             </div>
         </div>
-    </div>
+                
+                
 
+
+
+    </div>
+    <x-navbar />
 
 
 
