@@ -22,6 +22,7 @@ Route::get('/user', [PublicController::class, 'user'])->name('user');
 
 /*Articles*/
 Route::get('/article/index', [ArticleController::class, 'index'])->name('article.index');
+Route::get('/article/create', [ArticleController::class, 'create'])->name('article.create');
 
 Route::get('/article/create', [ArticleController::class, 'create'])->name('article.create');
 

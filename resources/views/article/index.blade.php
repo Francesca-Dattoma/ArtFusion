@@ -6,6 +6,13 @@
 
         <div class="row justify-content-center">
 
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-12 col-md-3">
+
+                <a href="{{route('article.create')}}" class="btn btn-primary">Crea un articolo</a>
+              </div>
+            </div>
             @forelse($articles as $article)
 
             <div class="col-12 col-md-8">
@@ -22,6 +29,8 @@
                     </div>
 
                 </section>
+
+            </div>
 
             </div>
 
