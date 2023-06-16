@@ -40,7 +40,7 @@
     height: 500px;
     /* display: flex;
   justify-content: center; */
-    background-color: rgb(140, 203, 146);
+    background-color: #8ccb92;
     box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
     border-radius: 0 0 25px 25px;
     position: relative;
@@ -1402,7 +1402,7 @@
         position: absolute;
         top: 55px;
         right: 85px;
-        color: #7c6391ff;
+        color: #7c6391;
         animation: h2 1 4s forwards;
     }
 
@@ -1420,7 +1420,7 @@
         height: 105px;
         position: absolute;
         border-radius: 50%;
-        background-color: #fedcb6ff;
+        background-color: #fedcb6;
         top: -515px;
         left: 125px;
         animation: cerchio 1 5s forwards;
@@ -1534,3 +1534,14 @@
 }
 
 /* 1399 px vediamo il primo problema, la scritta fusion va versdo sinistra....  */
+
+
+
+.FooterC{
+
+    background-color: #7c6391ff;
+
+
+
+
+}
