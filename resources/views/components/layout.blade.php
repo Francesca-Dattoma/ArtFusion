@@ -11,8 +11,8 @@
     @vite (['resources/css/app.css', 'resources/js/app.js'])
     
 
-    <title>ArtFusion</title> <link rel="stylesheet" href="">
     @livewireStyles
+    <title>ArtFusion</title> <link rel="stylesheet" href="">
 </head>
 <body>
     
