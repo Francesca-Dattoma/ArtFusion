@@ -8,10 +8,7 @@
 
           <div class="container">
             <div class="row justify-content-end">
-              <div class="col-12 col-md-3">
 
-                <a href="{{route('article.create')}}" class="btn btn-primary">Crea un articolo</a>
-              </div>
             </div>
             @forelse($articles as $article)
 
@@ -36,11 +33,10 @@
 
             @empty 
 
-            <div class="col-12 text-center">
-
-                <p>Qui non c'è nulla</p>
-
-            </div>
+                <div class="col-12 text-center p-5">
+                   <p>Qui non c'è nulla</p>
+                  <a href="{{route('article.create')}}" class="btn btn-primary">Crea un articolo</a>
+                </div>
 
             @endforelse            
             
